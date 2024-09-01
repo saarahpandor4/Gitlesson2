@@ -1,3 +1,164 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.background {
+  background-image: url("https://c.files.bbci.co.uk/171B8/production/_123884649_gettyimages-1254054436.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  align-items: flex-start;
+}
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
 h1 {
   color: azure;
+  font-family: sans-serif;
+  font-weight: bolder;
+  font-size: 400%;
+  margin-right: auto;
+  margin: 0;
+  padding-left: 5%;
+  padding-top: 2%;
+}
+.nav {
+  display: flex;
+  gap: 2.2rem;
+  text-transform: uppercase;
+  color: azure;
+  align-items: center;
+  padding-right: 10%;
+}
+.nav a {
+  font-size: 1.5rem;
+  font-weight: 200;
+  color: azure;
+}
+.nav a:hover {
+  background-color: rgb(119, 132, 164);
+}
+.future {
+  display: flex; 
+  align-items: flex-end; 
+  padding: 20px;  
+  flex-grow: 1;
+}
+
+
+.discover {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+}
+
+.discover__heading {
+  margin: 0; 
+  position: absolute;
+  bottom: 400px;
+  left: 3rem;
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: xx-large;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: azure;
+}
+
+.discover__heading2 {
+  margin: 0;
+  position: absolute;
+  bottom: 320px;
+  left: 3rem;
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  font-size: x-large;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: azure;
+
+}
+
+.discover__more {
+  padding: 8px 16px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 4px;
+  border: 3px solid white;
+  background-color: transparent;
+  align-self: flex-start;
+  transition: background-color 0.3s, color 0.3s
+}
+
+.discover__more:hover {
+background-color: #e7e9ed
+color(rgb(37, 37, 37))
+
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around; 
+  align-items: center;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.7); 
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-image {
+  width: 150px; 
+  height: auto;
+  border-radius: 8px; 
+  margin-bottom: 10px; 
+}
+
+.footer-text {
+  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  max-width: 200px; 
+}
+
+ /*.discover__heading {
+  position: absolute;
+  bottom: 150px;
+  left: 2rem;
+  display: flex;
+  flex-direction: column;
+  color: azure;
+  margin: 0;
+}
+
+.discover__more {
+  padding: 8px 16px;
+  background-color: #d9dcdf;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+.discover__more:hover {
+  background-color: aqua;
 }
